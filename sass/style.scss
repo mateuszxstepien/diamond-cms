@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #181D23;
+
+    .active {
+        background-color: rgba(255, 255, 255, .2);
+    }
+
+    .page-link {
+        padding: 0.5em 1em;
+        font-size: 1.4rem;
+        background-color: transparent;
+        color: #fff;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    .page-link:hover {
+        color: #ddd;
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .info-top {
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    .logo {
+        .logo-text {
+            font-size: 3.4rem;
+            text-shadow: 0 0 5px #fff;
+        }
+
+        p {
+            font-size: 2.8rem;
+        }
+    }
+
+    .panel {
+        width: 1600px;
+        height: 1000px;
+        border: 1px solid #4B5769;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .panel-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #4B5769;
+
+            .date-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 160px;
+                color: #fff;
+
+                .day {
+                    font-size: 2rem;
+                }
+
+                .time {
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+
+                .date {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 700px;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 30%;
+                    color: #fff;
+                    text-decoration: none;
+                    border: 1px solid #ddd;
+                    border-radius: 15px;
+                }
+
+                a:hover {
+                    background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+                }
+
+                .menu-item {
+                    i {
+                        font-size: 6rem;
+                        margin-bottom: 0.4em;
+                    }
+
+                    p {
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .info-box {
+                h3 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .panel-right {
+            background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+
+            .main-stats {
+                h1 {
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                .main-stat-box {
+                    height: 140px;
+                    border-radius: 15px;
+                    transition: background-color 0.3s;
+
+                    h3 {
+                        margin-bottom: 1em;
+                        font-size: 1.8rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .main-stat-box:hover {
+                    background-color: rgba(255, 255, 255, 0.08);
+                }
+            }
+
+            .main-table {
+                h3 {
+                    font-size: 2.6rem;
+                    color: #fff;
+                    font-weight: bold;
+                }
+
+                .table-dark {
+                    background-color: transparent;
+                }
+
+                thead,
+                .dropdown-item {
+                    font-size: 1.4rem;
+                }
+
+                tbody {
+                    font-size: 1.2rem;
+                }
+
+                .btn {
+                    font-size: 1.6rem;
+                }
+
+            }
+
+            .aside {
+                h3 {
+                    margin-bottom: 1em;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .users-online p,
+                .users-gender i {
+                    font-size: 4rem;
+                }
+
+                .users-gender {
+                    .fa-male {
+                        text-shadow: 0 0 10px rgb(9, 255, 0);
+                    }
+
+                    .fa-female {
+                        text-shadow: 0 0 10px rgb(0, 110, 255);
+                    }
+
+                    p {
+                        font-size: 3rem;
+                    }
+                }
+
+                .monthly-stats {
+
+                    .number {
+                        font-size: 1.4rem;
+                    }
+
+                    .form-control,
+                    option {
+                        font-size: 1.6rem;
+                    }
+
+                    .info {
+                        font-size: 1.8rem;
+                    }
+
+                }
+            }
+
+            .users-list {
+                li {
+                    padding: 0.5em 1em;
+                    margin: 0.2em 0;
+                    font-size: 2rem;
+                }
+
+                .btn {
+                    font-size: 1.6rem;
+                }
+
+                .list-group-item {
+                    border: 1px solid #fff;
+                }
+
+                li:hover {
+                    background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+                }
+            }
+
+            .user-search {
+
+                label,
+                input,
+                select {
+                    font-size: 1.6rem;
+                }
+
+                .btn {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .posts {
+            h3 {
+                font-size: 2.4rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .featured-post {
+                .card-body {
+                    font-size: 1.4rem;
+                }
+
+                .btn {
+                    font-size: 1.6rem;
+                }
+
+                .card-title {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .featured-post:hover {
+                background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+            }
+        }
+
+        .active-users {
+            .card-img {
+                overflow: hidden;
+            }
+
+            img {
+                height: 180px;
+                object-fit: cover;
+                opacity: 0.6;
+                transition: opacity 0.3s, transform 0.3s;
+            }
+
+            img:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+
+            .card-body,
+            .btn {
+                font-size: 1.5rem;
+            }
+        }
+
+        .find-post,
+        .find-post input,
+        .find-post .btn,
+        .find-post .dropdown-item {
+            font-size: 1.6rem;
+        }
+    }
+
+    .posts-modal {
+        h3 {
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        p,
+        .btn {
+            font-size: 1.3rem;
+
+        }
+
+        .modal-body {
+            .btn {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .modal-content {
+        h3 {
+            .card-title {
+                font-size: 2.6rem;
+            }
+        }
+
+        label,
+        .newsletter,
+        select,
+        input {
+            font-size: 1.6rem;
+        }
+
+        .modal-footer {
+            .btn {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
